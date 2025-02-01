@@ -7,6 +7,7 @@ mysocket = socket(AF_INET, SOCK_STREAM)
 mysocket.connect(('data.pr4e.org', 80))
 
 # the telnet command that we send
+# .encode() encodes the UNICODE string to UTF-8 
 command = 'GET http://data.pr4e.org/page1.htm HTTP/1.0\r\n\r\n'.encode()
 
 # sending that command to the server
